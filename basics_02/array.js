@@ -190,6 +190,9 @@ console.log(flattenedArrayWithMoreDepth); // [1, 2, 3, 4, 5, 6, 7, 8]
 console.log(Array.isArray(fruits)); // true
 console.log(Array.isArray("not an array")); // false
 
+
+
+
 //from() method creates a new array from an array-like or iterable object.
 let string = "hello";
 let arrayFromString = Array.from(string); // This creates an array from the string, where each character becomes an element
@@ -203,6 +206,9 @@ console.log(arrayFromSet); // [1, 2, 3]
 let arrayLikeObject = {0: "a", 1: "b", 2: "c", length: 3}; // This is an object that has numeric keys and a length property, making it array-like
 let arrayFromObject = Array.from(arrayLikeObject); // This creates an array from the object, where the properties with numeric keys become elements in the array
 console.log(arrayFromObject); // ["a", "b", "c"]
+
+
+
 
 
 //of() method creates a new array instance from a variable number of arguments.
