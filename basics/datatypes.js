@@ -24,3 +24,10 @@ console.log(typeof boolean);
 console.log(typeof nullValue);
 console.log(typeof undefinedValue);
 console.log(typeof symbolValue);
+
+
+//bigint is a new primitive data type introduced in ES2020 that can represent integers with arbitrary precision.
+let bigIntValue=1234567890123456789012345678901234567890n; 
+// The "n" at the end of the number indicates that it is a BigInt literal.
+console.log(typeof bigIntValue); // output: "bigint"
+console.log(bigIntValue); // output: 1234567890123456789012345678901234567890n

@@ -102,3 +102,19 @@ let strUndefined=String(undefinedValue); // converts undefined to string
 console.log(typeof undefinedValue); // undefined
 console.log(typeof strUndefined); // string
 console.log(strUndefined); // "undefined"
+
+
+
+let str3=""; // empty string
+let numStr3=Number(str3); // converts empty string to 0
+
+console.log(typeof str3); // string
+console.log(typeof numStr3); // number
+console.log(numStr3); // 0
+
+let str4=" "; // string with a space
+let numStr4=Number(str4); // converts string with a space to 0
+
+console.log(typeof str4); // string
+console.log(typeof numStr4); // number
+console.log(numStr4); // 0
