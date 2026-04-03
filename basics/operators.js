@@ -72,7 +72,6 @@ console.log(a>=10); // greater than or equal to, output: true
 console.log(a<=10); // less than or equal to, output: true
 
 
-
 //difference between == and ===
 let num1=5; // number
 let str1="5"; // string
@@ -87,6 +86,45 @@ console.log(num1!=str1); // loose inequality, output: false (type coercion occur
 console.log(num1!==str1); // strict inequality, output: true (no type coercion, different types)
 
 
+//Important
+console.log(null==undefined); // loose equality, output: true (null and undefined are considered equal in loose equality)
+console.log(null===undefined); // strict equality, output: false (null and undefined are different types, so they are not equal in strict equality)
+console.log("2">1); // output: true (the string "2" is converted to the number 2 for the comparison)
+console.log("02"<1); // output: false (the string "02" is converted to the number 2 for the comparison)
+console.log("2"==2); // output: true (the string "2" is converted to the number 2 for the comparison)
+console.log("2"===2); // output: false (no type coercion, different types)
+console.log(null>0); // output: false (null is converted to 0 for the comparison, so the comparison is 0 > 0, which is false)
+console.log(null<0); // output: false (null is converted to 0 for the comparison, so the comparison is 0 < 0, which is false)
+console.log(null==0); // output: false (null is not equal to 0 in either loose or strict equality)
+console.log(null>=0); // output: true (null is converted to 0 for the comparison, so the comparison is 0 >= 0, which is true)
+console.log(null<=0); // output: true (null is converted to 0 for the comparison, so the comparison is 0 <= 0, which is true)
+// why == && >= behaves differently with null?
+// In JavaScript, the behavior of null in comparisons can be a bit confusing due to type coercion rules. 
+// When using the loose equality operator (==), 
+// null is considered equal to undefined, but not equal to any other value, including 0. 
+// However, when using comparison operators like >= or <=, null is converted to 0 for the comparison. 
+// This is why null == 0 is false (because null is not equal to 0), but null >= 0 and null <= 0 are true 
+// (because null is converted to 0 for the comparison). 
+
+console.log(undefined==null); // output: true (undefined and null are considered equal in loose equality)
+console.log(undefined==0); // output: false (undefined is not equal to 0 in loose equality)
+console.log(undefined>0); // output: false (undefined is converted to NaN for the comparison, and any comparison with NaN returns false)
+console.log(undefined<0); // output: false (undefined is converted to NaN for the comparison, and any comparison with NaN returns false)
+console.log(undefined>=0); // output: false (undefined is converted to NaN for the comparison, and any comparison with NaN returns false)
+console.log(undefined<=0); // output: false (undefined is converted to NaN for the comparison, and any comparison with NaN returns false)
+
+//it is important to understand these nuances when working with null and undefined in JavaScript, 
+// as they can lead to unexpected results if not handled carefully.
+
+// Hence, it is best practice to avoid using null in comparisons and 
+// to use strict equality (===) instead of loose equality (==) to prevent confusion 
+// and ensure that your code behaves as intended.
+
+
+
+
+
+
 
 //logical operators
 let x=true;
@@ -99,6 +137,9 @@ console.log(!y); // logical NOT, output: true
 
 
 
+
+
+
 //increment and decrement operators
 let count=0;
 
@@ -108,6 +149,9 @@ console.log(count); // output: 1
 count--; // equivalent to count = count - 1
 console.log(count); // output: 0
 
+
+
+
 //prefix vs postfix increment
 let number=5;
 
@@ -115,6 +159,7 @@ console.log(number++); // output: 5 (postfix increment, returns the value before
 console.log(number); // output: 6 (number is now incremented)
 console.log(++number); // output: 7 (prefix increment, increments the value before returning it)
 console.log(number); // output: 7 (number is now incremented)
+
 
 
 
