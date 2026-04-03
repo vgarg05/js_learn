@@ -189,6 +189,14 @@ console.log(str7.__proto__); // Output: String.prototype
 // When you create a string in JavaScript, it inherits these methods from the String prototype, 
 // allowing you to manipulate and work with strings easily.
 
+let str = new String("Hello");
+// 🔍 What actually happens internally:
+// new String("Hello") creates a String object using the String constructor (class-like function)
+// This object is linked to String.prototype
+// So it gets access to methods like:
+// .toUpperCase()
+// .slice()
+// .substring()
 
 
 
