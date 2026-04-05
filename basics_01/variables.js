@@ -23,7 +23,8 @@ const pi=3.14; // const is used to declare a constant named pi and assign it the
 
 
 
-var userName="John"; // var is used to declare a variable named userName and assign it the value "John". 
+var userName="John"; 
+// var is used to declare a variable named userName and assign it the value "John". 
 // var is function-scoped and can be redeclared and reassigned.
 console.log(userName); // John
 
