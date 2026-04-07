@@ -36,8 +36,8 @@ In Node.js: this refers to module.exports (an empty object {} by default) if you
 🔥 Key Point
 Environment	          this refers to
 Browser	              window
-Node REPL	          global
-Node file	          {} (module.exports)
+Node REPL	            global
+Node file	           {} (module.exports)
 
 
 +++++++++++++++ What is REPL? +++++++++++++++++
