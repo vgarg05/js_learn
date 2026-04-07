@@ -165,6 +165,7 @@ console.log(number); // output: 7 (number is now incremented)
 
 
 //ternary operator
+//Syntax: condition ? expressionIfTrue : expressionIfFalse
 let age=18;
 let canVote=age>=18 ? "Yes" : "No"; // if age is greater than or equal to 18, canVote is "Yes", otherwise "No"
 console.log(canVote); // output: "Yes"  
